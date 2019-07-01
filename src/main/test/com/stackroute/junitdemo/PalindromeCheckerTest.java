@@ -19,12 +19,10 @@ public class PalindromeCheckerTest {
         }
         @BeforeClass
         public static void setUpBeforeClass(){
-            System.out.println("Before");
         }
         @AfterClass
         public static void tearDownAfterClass()
         {
-            System.out.println("After");
         }
         @Test
         public void givenPalingromeShouldReturnSuccessMessage(){

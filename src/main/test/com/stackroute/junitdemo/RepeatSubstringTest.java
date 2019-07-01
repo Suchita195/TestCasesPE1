@@ -20,12 +20,12 @@ public class RepeatSubstringTest {
     }
     @BeforeClass
     public static void setUpBeforeClass(){
-        System.out.println("Before");
+        System.out.println("Before setup");
     }
     @AfterClass
     public static void tearDownAfterClass()
     {
-        System.out.println("After");
+        System.out.println("After teardown");
     }
     @Test
     public void givenString1ShouldReturnDesiredResult(){
@@ -69,7 +69,7 @@ public class RepeatSubstringTest {
         String result=check.repeatSubstring(null,2);
 
         //assert
-        assertEquals("invalid",result);
+        assertNull("invalid",result);
     }
 
 

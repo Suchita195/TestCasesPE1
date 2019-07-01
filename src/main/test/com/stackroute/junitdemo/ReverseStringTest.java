@@ -20,12 +20,12 @@ public class ReverseStringTest {
     }
     @BeforeClass
     public static void setUpBeforeClass(){
-        System.out.println("Before");
+        System.out.println("Before setup");
     }
     @AfterClass
     public static void tearDownAfterClass()
     {
-        System.out.println("After");
+        System.out.println("After teardown");
     }
 
     @Test
@@ -68,7 +68,7 @@ public class ReverseStringTest {
         String result=check.reverseString(null);
 
         //assert
-        assertEquals("invalid",result);
+        assertNull("null not allowed",result);
     }
 
 

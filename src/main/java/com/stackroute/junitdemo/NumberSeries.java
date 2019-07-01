@@ -3,19 +3,19 @@ package com.stackroute.junitdemo;
 public class NumberSeries {
 
     public static String numberSeries(int num) {
-        int i,j,k=0;
-        String s="";
+        int index1,index2,initial=0;
+        String string="";
         if(num==0)
         {
             return "Invalid";
         }
-        for (i = 1; i <= num; i++) {
-            for (j = 1; j <= i; j++) {
-                k=i;
-                s=s+k;
+        for (index1 = 1; index1 <= num; index1++) {//outer loop
+            for (index2 = 1; index2 <= index1; index2++) {//inner loop
+                initial=index1;
+                string=string+initial;
             }
 
         }
-        return s;
+        return string;
     }
 }

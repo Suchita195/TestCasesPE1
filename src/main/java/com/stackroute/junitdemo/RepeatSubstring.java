@@ -8,10 +8,10 @@ public class RepeatSubstring {
         String str;
         str=original;
         if(original==null)
-            return "invalid";
+            return null;
         for(int i=0;i<n;i++)
         {
-            str= str+original.substring(original.length()-n);
+            str= str+original.substring(original.length()-n);//store original and repeat substring
         }
        return str;
     }

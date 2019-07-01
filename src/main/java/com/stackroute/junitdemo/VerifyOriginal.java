@@ -2,13 +2,13 @@ package com.stackroute.junitdemo;
 
 public class VerifyOriginal {
 
-    public static String verifyOriginal(int n) {
+    public static String verifyOriginal(int number) {
         int original=60;
 
-        if(n<original)
+        if(number<original)
             return "Number guessed is less than original number";
 
-        else if(n>original)
+        else if(number>original)
             return "Number guessed is more than original number";
 
         else

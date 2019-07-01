@@ -20,12 +20,12 @@ public class NumberSeriesTest {
     }
     @BeforeClass
     public static void setUpBeforeClass(){
-        System.out.println("Before");
+        System.out.println("Before setup");
     }
     @AfterClass
     public static void tearDownAfterClass()
     {
-        System.out.println("After");
+        System.out.println("After teardown");
     }
 
     @Test

@@ -9,23 +9,23 @@ public class CheckForCharacterTest {
     CheckForCharacter check;
     @Before
     public void setUp(){
-        System.out.println("Before");
+
         check=new CheckForCharacter();
     }
     @After
     public void tearDown()
     {
-        System.out.println("After");
+
         check=null;
     }
     @BeforeClass
     public static void setUpBeforeClass(){
-        System.out.println("Before");
+
     }
     @AfterClass
     public static void tearDownAfterClass()
     {
-        System.out.println("After");
+
     }
     @Test
     public void givenCharacter1ShouldReturnDesiredResult(){
@@ -82,4 +82,5 @@ public class CheckForCharacterTest {
         //assert
         assertEquals("Character is a small letter",result);
     }
+
 }

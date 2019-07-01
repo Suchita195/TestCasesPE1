@@ -4,17 +4,16 @@ public class TotalOfNumbers {
     public static String TotalOfNumbers(String[] num) {
 
         int total = 0;
-        int i;
+        int index;
         try {
 
-            for(i=0;i<num.length;i++) {
-                if (Integer.parseInt(num[i]) == 0){
+            for(index=0;index<num.length;index++) {
+                if (Integer.parseInt(num[index]) == 0)//enter the numbers till 0 is not entered{
                     break;
             }
-                total +=Integer.parseInt(num[i]);
+                total +=Integer.parseInt(num[index]);//calculate the total
             }
 
-        }
     catch(Exception e)
 
     {

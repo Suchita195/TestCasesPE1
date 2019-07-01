@@ -8,23 +8,19 @@ public class ArrangeNonAscendingTest {
     ArrangeNonAscending check;
     @Before
     public void setUp(){
-        System.out.println("Before");
         check=new ArrangeNonAscending();
     }
     @After
     public void tearDown()
     {
-        System.out.println("After");
         check=null;
     }
     @BeforeClass
     public static void setUpBeforeClass(){
-        System.out.println("Before");
     }
     @AfterClass
     public static void tearDownAfterClass()
     {
-        System.out.println("After");
     }
     @Test
     public void givenInput1ShouldReturnDesiredResult(){

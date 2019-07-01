@@ -20,12 +20,12 @@ public class VerifyOriginalTest {
     }
     @BeforeClass
     public static void setUpBeforeClass(){
-        System.out.println("Before");
+
     }
     @AfterClass
     public static void tearDownAfterClass()
     {
-        System.out.println("After");
+
     }
 
     @Test

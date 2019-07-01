@@ -6,11 +6,11 @@ public class ReverseString {
         str=original;
         String reverse = " ";
         if(str==null)
-        return "invalid";
+        return null;
 
-        int length = original.length();
+        int length = original.length();//length of the string
 
-        for (int i = length - 1 ; i >= 0 ; i--)
+        for (int i = length - 1 ; i >= 0 ; i--)//reverse loop
             reverse = reverse + original.charAt(i);
 
         return "Reverse of the string: " + reverse;

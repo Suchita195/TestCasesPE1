@@ -4,43 +4,43 @@ import java.util.Arrays;
 
 public class ArrangeNonAscending {
     public static String arrangeNonAscending(int num) {
-        int n = 0, temp, res = 0, x, num_copy;
+        int count = 0, temporary, res = 0, mod, num_copy;
         String t="";
         num_copy = num;
         while (num > 0) {
             num = num / 10;
-            n++;
+            count++;
         }
-        int a[] = new int[n];
-        int k = 0;
+        int array[] = new int[count];
+        int counter = 0;
         num = num_copy;
         while (num > 0) {
-            x = num % 10;
+            mod = num % 10;
             num = num / 10;
-            a[k] = x;
-            k++;
+            array[counter] = mod;
+            counter++;
         }
 
-        for (int i = 0; i < n; i++) {
-            for (int j = i + 1; j < n; j++) {
-                if (a[i] < a[j]) {
-                    temp = a[i];
-                    a[i] = a[j];
-                    a[j] = temp;
+        for (int index1 = 0; index1 < count; index1++) {
+            for (int index2 = index1 + 1; index2 < count; index2++) {
+                if (array[index1] < array[index2]) {
+                    temporary = array[index1];
+                    array[index1] = array[index2];
+                    array[index2] = temporary;
                 }
             }
         }
 
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < count; i++) {
 
-            t=t+Integer.toString(a[i]);
+            t=t+Integer.toString(array[i]);
 
         }
 
-        for(int i=0;i<n;i++)
-            if (a[i] % 2 == 0) {
-                res = res + a[i];
+        for(int i=0;i<count;i++)
+            if (array[i] % 2 == 0) {
+                res = res + array[i];
 
             }
 

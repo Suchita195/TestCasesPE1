@@ -9,15 +9,16 @@ public class VowelConsonant {
         if (ch==null)
              return"null not allowed";
         int len = ch.length();
-        for (int i = 0; i < len; i++) {
-            if (ch.charAt(i) == 'a' || ch.charAt(i)== 'A' || ch.charAt(i)== 'e' || ch.charAt(i)== 'E' ||
-                    ch.charAt(i) == 'i' || ch.charAt(i)== 'I' || ch.charAt(i)== 'o' || ch.charAt(i) == 'O' ||
-                    ch.charAt(i) == 'u' || ch.charAt(i) == 'U')
-                result= result+"vowel";
+        for (int index = 0; index < len; index++) {
+            if (ch.charAt(index) == 'a' || ch.charAt(index)== 'A' || ch.charAt(index)== 'e' || ch.charAt(index)== 'E' ||
+                    ch.charAt(index) == 'i' || ch.charAt(index)== 'I' || ch.charAt(index)== 'o' || ch.charAt(index) == 'O' ||
+                    ch.charAt(index) == 'u' || ch.charAt(index) == 'U')
+                result= result+"vowel";//if the index value is vowel
             else
-                result= result+"consonant";
+                result= result+"consonant";//if the index value is consonant
         }
-                return result;
+                return result;//return result
+
 
 
         }

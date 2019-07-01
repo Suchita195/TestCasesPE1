@@ -8,24 +8,17 @@ public class TotalOfNumbersTest {
     TotalOfNumbers total;
     @Before
     public void setUp(){
-        System.out.println("Before");
         total=new  TotalOfNumbers();
     }
     @After
     public void tearDown()
     {
-        System.out.println("After");
         total=null;
     }
     @BeforeClass
-    public static void setUpBeforeClass(){
-        System.out.println("Before");
-    }
+    public static void setUpBeforeClass(){}
     @AfterClass
-    public static void tearDownAfterClass()
-    {
-        System.out.println("After");
-    }
+    public static void tearDownAfterClass(){}
 
     @Test
     public void givenNumbersShouldReturnTotal(){

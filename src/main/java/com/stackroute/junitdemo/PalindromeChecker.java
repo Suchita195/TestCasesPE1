@@ -5,22 +5,22 @@ public class PalindromeChecker {
 
     public static String palindromeChecker(int num) {
         try {
-            int m, x, i = 0, res = 0;
-            m = num;
+            int original, mod, value = 0, res = 0;
+            original = num;
             while (num > 0) {
-                x = num % 10;
-                i = i * 10 + x;
+                mod = num % 10;
+                value = value * 10 + mod;
                 num = num / 10;
             }
 
-            if (i == m) {
+            if (value == original) {
 
-                while (m > 0) {
-                    x = m % 10;
-                    if (x % 2 == 0) {
-                        res = res + x;
+                while (original > 0) {
+                    mod = original % 10;
+                    if (mod % 2 == 0) {
+                        res = res + mod;
                     }
-                    m = m / 10;
+                    original = original / 10;
                 }
 
                 if (res > 25) {
